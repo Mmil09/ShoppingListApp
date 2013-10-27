@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************End of CSS reset **************************/
+* {
+	background-repeat: no-repeat;
+	opacity: 1.0;
+}
+
+p {
+	width: 100%;
+	height: 100%;
+}
+body {
+	position: absolute;
+	font-family: arial;
+	background-color: white;
+	background: url('http://static.flickr.com/162/366173800_0910bec250.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+#content {
+	height: 100%;
+	width: 75%;
+	display: block;
+	margin: auto;
+	min-width: 400px;
+}
+
+.text-area {
+	text-align: center;
+   	border-radius: 40px;
+	font-family: 'Ultra', sans-serif; 
+	color: white;
+	background-color: rgba(0,0,0, .5); 
+	font-weight: bold;
+}
+#header {
+	width: 450px;
+    font-size: 70px;
+    font-variant: small-caps;
+    -webkit-text-stroke: 2px black;
+	margin: 50px auto 50px auto; 
+}
+
+#instruction {
+	padding: 10px;
+	font-size: 18px;
+	width: 500px;
+	margin: 0px auto 50px auto;
+	
+}
+
+.pending {
+	background: #E4F584;
+}
+
+.pending:hover {
+	background: #C2C2C4 url('') 5px 50% no-repeat;
+	cursor: pointer;
+}
+
+.completed {
+	text-decoration: line-through;
+	background: #B7E183 url('Check-icon.png') 5px 50% no-repeat;
+
+}
+
+.completed:hover {
+	background: #98CC58 url('Check-icon.png') 5px 50% no-repeat;
+	cursor: pointer;
+}
+
+
+#buttonSubmit {
+	position: relative;
+	padding: 3px;
+	display: inline-block;
+	background: white;
+	border:1px solid black;
+	border-radius: 5%;
+}
+
+#buttonSubmit:hover {
+	cursor: pointer;
+	background:#F4FCC5;
+}
+
+.check {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	color: white;
+	border: 1px solid black;
+}
+
+#list {
+	width: 400px;
+	margin: 100px;
+	position: relative;
+	margin: auto;
+}
+
+#items li {
+	position: relative;
+	border-radius: 10px 40px 40px 10px;
+	text-align: left;
+	display: block;
+	border: 3px solid black;
+	padding: 5px 100px 5px 40px;
+	margin: 10px;
+	min-height: 30px;
+	box-shadow: 1px 1px 5px black;
+}
+
+#ui-sortable {
+	width:400px;
+	position: relative;
+	margin: auto;
+}
+
+
+#input-submit {
+	position: relative;
+	display: block;
+	width: 380px;
+	margin: auto auto 50px auto;
+}
+
+#inputText {
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	margin: auto;
+}
+
+.li-icon {
+	position: absolute;
+	top:10%;
+	border: 1px solid rgba(0,0,0, 0.0);
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	margin: 1px;
+}
+
+.li-icon:hover {
+	border: 1px solid black;
+}
+
+.edit {
+	background: url('edit.png');
+	right: 10px;
+	
+}
+
+.delete {
+	background: url('Delete-icon.png');
+	right:50px;
+}
+
