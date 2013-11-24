@@ -63,7 +63,7 @@ body {
 	background-color: white;
 	background: url('http://static.flickr.com/162/366173800_0910bec250.jpg');
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100%;
